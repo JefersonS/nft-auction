@@ -1,0 +1,17 @@
+{
+  "name": "notification-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "sucrase-node src/index.js"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4",
+    "node": "^20.2.0",
+    "sucrase": "^3.32.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
+}
