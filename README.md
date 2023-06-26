@@ -63,3 +63,8 @@ A message like this is created for each user and then sent over to Kafka, that t
 ![1687762174738](image/README/1687762174738.png)
 
 Which concludes the process of *hitting the API -> working with the data -> producing messages -> consuming each message -> processing each message accordingly*.
+
+##### Possible issues
+
+- Docker is not set to build the application and then start, `sucrase` and `nodemon` are used instead, the first `docker compose up` may take a while.
+
