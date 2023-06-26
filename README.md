@@ -38,7 +38,7 @@ It is required to have docker running in your machine, then you can run:
 
 This should start Kafka, the Api and the Notification Service. Make sure to keep an eye in the logs to wait until everything is started, but also to see the logs from each notification sent.
 
-Now head to `localhost:333/create-auction/:id` and replace `id` with any ID found in the [Nfts mock file](api/src/nfts/NftMocks.ts), and then the logs should show each notification being sent.
+Now head to `localhost:3333/create-auction/:id` and replace `id` with any ID found in the [Nfts mock file](api/src/nfts/NftMocks.ts), and then the logs should show each notification being sent.
 
 # How it works
 
