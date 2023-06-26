@@ -27,7 +27,7 @@ A few paths were taken given the scope of the project, resulting in trade-offs t
 
 1. Kafka was chosen given my past experience with it and the fact that not long ago I did a quick test using the same server to produce and consume messages, meaning I had an ideia of how to set it up. However, it does look like a big tool for such a small test case;
 2. OOP was in the requirements, and when it comes to NodeJS and OOP one of the main options is Nest.JS. I do have experience with it, however configuring it could be tricky, mainly when throwing Kafka into the scene. For this reason I decided to create classes using TypeScript only without the aid of any other framework or libs;
-3. The notification-service splits the logic of all technologies into different classes, meaning that each used technology has its own class with its own methods. It also means that for each new technology a new class would be required, which initially sounds like a high maintenance code. However, splitting this logic into multiple classes gives us the freedom of treating each one of them the way we prefer, which takes away the high effort of maintaining one big generic solution while opening the doors for any other future technology, without touching or changing the existing ones;
+3. The notification-service splits the logic of all notification technologies into different classes, meaning that each used technology has its own class with its own methods. It also means that for each new technology a new class would be required, which initially sounds like a high maintenance code. However, splitting this logic into multiple classes gives us the freedom of treating each one of them the way we prefer, which takes away the high effort of maintaining one big generic solution while opening the doors for any other future technology, without touching or changing the existing ones;
 4. As mentioned on the assumptions, all Kafka options are set to default. We could make use of batches or a more tailored solution for partitions, however, going for the default options saves up time of set up and how  data is handled for consumption, which helps making sure that the given schedule is followed;
 
 # Running the test case
@@ -38,7 +38,7 @@ It is required to have docker running in your machine, then you can run:
 
 This should start Kafka, the Api and the Notification Service. Make sure to keep an eye in the logs to wait until everything is started, but also to see the logs from each notification sent.
 
-Now head to `localhost:333/create-auction/:id` and replace `id` with any ID found in the [Nfts mock file]()(api/src/nfts/NftMocks.ts), and then the logs should show each notification being sent.
+Now head to `localhost:333/create-auction/:id` and replace `id` with any ID found in the [Nfts mock file](api/src/nfts/NftMocks.ts), and then the logs should show each notification being sent.
 
 # How it works
 
