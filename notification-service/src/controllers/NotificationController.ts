@@ -1,8 +1,8 @@
 import { NotificationDataInterface } from '../types/NotificationMessageInterface'
-import EmailNotification from '../services/EmailNotificationService'
-import SmsNotification from '../services/SmsNotificationService'
-import AppNotification from '../services/AppNotificationService'
-import PhoneNotification from '../services/PhoneNotificationService'
+import EmailNotification from '../notificationServices/EmailNotificationService'
+import SmsNotification from '../notificationServices/SmsNotificationService'
+import AppNotification from '../notificationServices/AppNotificationService'
+import PhoneNotification from '../notificationServices/PhoneNotificationService'
 import { notificationPreferences } from '../types/NotificationPreferences'
 
 class NotificationController {

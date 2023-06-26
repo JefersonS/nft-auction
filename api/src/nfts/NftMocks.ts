@@ -1,4 +1,4 @@
-import { NftInterface } from '../types/NftInterface'
+import { NftInterface } from './NftInterface'
 
 const NftMocks: NftInterface[] = [
   {

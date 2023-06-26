@@ -1,5 +1,5 @@
-import { UserInterface, UserNotificationPreference } from '../types/UserInterface'
-import CollectionMock from './CollectionMocks'
+import { UserInterface, UserNotificationPreference } from './UserInterface'
+import CollectionMock from '../collections/CollectionMocks'
 
 const usersMock: UserInterface[] = [
   {

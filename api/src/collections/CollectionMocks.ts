@@ -1,5 +1,5 @@
-import { CollectionInterface } from '../types/CollectionInterface'
-import NftMocks from './NftMocks'
+import { CollectionInterface } from './CollectionInterface'
+import NftMocks from '../nfts/NftMocks'
 
 const collectionMock: CollectionInterface[] = [
   {

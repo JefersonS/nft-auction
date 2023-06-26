@@ -1,4 +1,4 @@
-import { NftInterface } from './NftInterface'
+import { NftInterface } from '../nfts/NftInterface'
 
 export interface CollectionInterface {
   id: string

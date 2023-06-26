@@ -1,10 +1,10 @@
 import { Request, Response } from 'express'
-import CollectionService from '../services/CollectionService'
-import UserService from '../services/UserService'
-import { CollectionInterface } from '../types/CollectionInterface'
-import { UserInterface, UserNotificationPreference } from '../types/UserInterface'
-import { NftInterface } from '../types/NftInterface'
-import NftService from '../services/NftService'
+import CollectionService from '../collections/CollectionService'
+import UserService from '../users/UserService'
+import { CollectionInterface } from '../collections/CollectionInterface'
+import { UserInterface, UserNotificationPreference } from '../users/UserInterface'
+import { NftInterface } from '../nfts/NftInterface'
+import NftService from '../nfts/NftService'
 
 class AuctionController {
 

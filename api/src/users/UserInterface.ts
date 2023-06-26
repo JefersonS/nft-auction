@@ -1,4 +1,4 @@
-import { CollectionInterface } from "./CollectionInterface"
+import { CollectionInterface } from "../collections/CollectionInterface"
 
 export interface UserInterface {
   id: string

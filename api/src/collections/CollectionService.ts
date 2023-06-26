@@ -1,5 +1,5 @@
-import { CollectionInterface } from '../types/CollectionInterface'
-import collectionMocks from '../mocks/CollectionMocks'
+import { CollectionInterface } from './CollectionInterface'
+import collectionMocks from './CollectionMocks'
 
 class CollectionService {
 

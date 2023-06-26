@@ -1,5 +1,5 @@
-import { UserInterface } from '../types/UserInterface'
-import UsersMock from '../mocks/UserMocks'
+import { UserInterface } from './UserInterface'
+import UsersMock from './UserMocks'
 
 class UserService {
 

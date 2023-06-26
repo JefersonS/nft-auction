@@ -1,5 +1,5 @@
-import { NftInterface } from '../types/NftInterface'
-import NftMocks from '../mocks/NftMocks'
+import { NftInterface } from './NftInterface'
+import NftMocks from './NftMocks'
 
 class NftService {
 
